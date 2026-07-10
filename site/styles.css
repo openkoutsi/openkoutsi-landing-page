@@ -368,6 +368,145 @@ body {
   opacity: 0.85;
 }
 
+/* PUBLIC INSTANCE */
+.lp .public {
+  padding: calc(80px * var(--density)) 0;
+  border-top: 1px solid var(--line);
+}
+
+.lp .pub-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.lp .pub-text h2 {
+  font-family: var(--font-space-grotesk), sans-serif;
+  font-weight: 600;
+  font-size: clamp(36px, 4.5vw, 56px);
+  letter-spacing: -0.035em;
+  line-height: 1;
+  margin: 0 0 20px;
+}
+
+.lp .pub-text h2 .italic {
+  font-style: italic;
+  font-weight: 500;
+  color: var(--lp-accent);
+}
+
+.lp .pub-text p {
+  font-size: 16px;
+  color: var(--ink-2);
+  line-height: 1.55;
+  max-width: 520px;
+  margin: 0 0 20px;
+}
+
+.lp .pub-text p a {
+  color: var(--lp-accent);
+  border-bottom: 1px solid color-mix(in oklch, var(--lp-accent) 40%, transparent);
+}
+
+.lp .pub-text p a:hover {
+  border-bottom-color: var(--lp-accent);
+}
+
+.lp .pub-text strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.lp .pub-note {
+  font-family: var(--font-jetbrains-mono), monospace;
+  font-size: 12px;
+  color: var(--ink-3);
+  margin: 18px 0 0;
+}
+
+/* data residency card */
+.lp .residency-card {
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--bg-2);
+  padding: 24px;
+}
+
+.lp .res-head {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-bottom: 18px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid var(--line);
+}
+
+.lp .res-flag {
+  font-size: 30px;
+  line-height: 1;
+}
+
+.lp .res-title {
+  font-family: var(--font-space-grotesk), sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  letter-spacing: -0.02em;
+}
+
+.lp .res-host {
+  font-family: var(--font-jetbrains-mono), monospace;
+  font-size: 12px;
+  color: var(--ink-3);
+  margin-top: 2px;
+}
+
+.lp .res-rows {
+  margin: 0;
+}
+
+.lp .res-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  padding: 11px 0;
+  border-bottom: 1px solid var(--line);
+  font-family: var(--font-jetbrains-mono), monospace;
+  font-size: 13px;
+}
+
+.lp .res-row:last-child {
+  border-bottom: none;
+}
+
+.lp .res-row dt {
+  color: var(--ink-3);
+}
+
+.lp .res-row dd {
+  margin: 0;
+  color: var(--ink);
+  text-align: right;
+  font-weight: 500;
+}
+
+.lp .res-note {
+  font-size: 13px;
+  color: var(--ink-2);
+  line-height: 1.5;
+  margin: 16px 0 0;
+}
+
+.lp .res-note a {
+  color: var(--lp-accent);
+  border-bottom: 1px solid color-mix(in oklch, var(--lp-accent) 40%, transparent);
+}
+
+.lp .res-note a:hover {
+  border-bottom-color: var(--lp-accent);
+}
+
 /* SELF-HOST */
 .lp .selfhost {
   padding: calc(80px * var(--density)) 0;
@@ -536,6 +675,7 @@ body {
   }
 
   .lp .hero-grid,
+  .lp .pub-grid,
   .lp .sh-grid {
     grid-template-columns: 1fr;
     gap: 32px;
