@@ -6,7 +6,7 @@
     <title>openkoutsi — open-source cycling training log</title>
     <meta
       name="description"
-      content="An open-source training log for cyclists. Self-host it in five minutes, track progression for a lifetime, and keep your data yours."
+      content="An open-source training log for cyclists. Self-host it in five minutes, or use our EU-hosted public instance in Finland — track progression for a lifetime and keep your data yours."
     />
     <link rel="canonical" href="https://koutsi.dev/" />
     <link rel="alternate" hreflang="en" href="https://koutsi.dev/" />
@@ -19,7 +19,7 @@
     <meta property="og:title" content="openkoutsi — open-source cycling training log" />
     <meta
       property="og:description"
-      content="An open-source training log for cyclists. Self-host it in five minutes, track progression for a lifetime, and keep your data yours."
+      content="An open-source training log for cyclists. Self-host it in five minutes, or use our EU-hosted public instance in Finland — track progression for a lifetime and keep your data yours."
     />
     <meta property="og:url" content="https://koutsi.dev/" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -55,6 +55,7 @@
           </div>
           <div class="nav-right">
             <a href="#features">Features</a>
+            <a href="#public">Public instance</a>
             <a href="#selfhost">Self-host</a>
             <a href="https://openkoutsi.github.io/openkoutsi-docs/" target="_blank" rel="noopener noreferrer">Docs</a>
             <a href="https://github.com/openkoutsi/openkoutsi" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
@@ -168,6 +169,52 @@
               <h3>Build structured sessions.</h3>
               <p>Design interval workouts with per-step power, HR, or cadence targets — zone numbers, % FTP, or absolute watts. Export to Zwift (.zwo) or as FIT workout files for Wahoo ELEMNT and Garmin bike computers.</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="public" class="public">
+        <div class="container pub-grid">
+          <div class="pub-text">
+            <div class="hero-eyebrow">
+              <span class="dot"></span>
+              <span>hosted in the EU · app.koutsi.dev</span>
+            </div>
+            <h2>Don't want to self-host?<br /><span class="italic">Use our EU instance.</span></h2>
+            <p>
+              We run a public instance at <a href="https://app.koutsi.dev" target="_blank" rel="noopener noreferrer">app.koutsi.dev</a> —
+              the same open-source openkoutsi, hosted and kept up to date for you. No server to rent, no Docker, no maintenance.
+            </p>
+            <p>
+              It runs on a single <strong>UpCloud</strong> server in <strong>Helsinki, Finland</strong>: an EU-owned provider,
+              on EU soil, under EU and Finnish law. Your training data stays inside GDPR's protections and out of reach of the
+              US CLOUD Act. Storage is encrypted at rest and backed up daily, and — as everywhere in openkoutsi — each user
+              gets a private database that no one else, not even an administrator, can read.
+            </p>
+            <div class="hero-actions">
+              <a href="https://app.koutsi.dev/login" class="btn btn-primary">Sign in →</a>
+              <a href="https://openkoutsi.github.io/openkoutsi-docs/" class="btn" target="_blank" rel="noopener noreferrer">Read the docs</a>
+            </div>
+            <p class="pub-note">Access is currently invite-only — self-serve sign-up is coming.</p>
+          </div>
+
+          <div class="residency-card">
+            <div class="res-head">
+              <span class="res-flag" aria-hidden="true">🇫🇮</span>
+              <div>
+                <div class="res-title">Data residency</div>
+                <div class="res-host">app.koutsi.dev</div>
+              </div>
+            </div>
+            <dl class="res-rows">
+              <div class="res-row"><dt>Location</dt><dd>Helsinki, Finland</dd></div>
+              <div class="res-row"><dt>Provider</dt><dd>UpCloud · EU-owned</dd></div>
+              <div class="res-row"><dt>Jurisdiction</dt><dd>EU · Finnish law</dd></div>
+              <div class="res-row"><dt>Regulation</dt><dd>GDPR</dd></div>
+              <div class="res-row"><dt>US CLOUD Act</dt><dd>Not applicable</dd></div>
+              <div class="res-row"><dt>Storage</dt><dd>Encrypted · daily backups</dd></div>
+            </dl>
+            <p class="res-note">Prefer full control? Export your data and <a href="#selfhost">self-host</a> anytime — no lock-in.</p>
           </div>
         </div>
       </section>
