@@ -42,6 +42,10 @@ files, mirroring the goaccess report pattern. Merging to `main` pushes a new `:l
   two in sync. Shared styles live in `site/styles.css`.
 - CTAs point at `https://app.koutsi.dev` (web app) and the docs site; keep those in sync if the
   hostnames change.
+- SEO files: `site/robots.txt` and `site/sitemap.xml` reference the canonical `https://koutsi.dev`
+  URLs, and both pages point their Open Graph / Twitter cards at `site/assets/og-image.png`
+  (1200×630). Keep the sitemap `<loc>`s, the absolute `og:*`/`hreflang` URLs, and the share image
+  current if the hostnames or headline copy change.
 
 ## License
 
