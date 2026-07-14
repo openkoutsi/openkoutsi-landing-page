@@ -12,7 +12,8 @@ split out into this standalone static site so the app can live on its own `app.`
 ## What's here
 
 - `site/` — the whole site: `index.html` (English, served at `/`), `fi/index.html` (Finnish,
-  `/fi/`), `styles.css`, `app.js`, and `assets/`. Plain HTML/CSS/JS, no build step.
+  `/fi/`), `privacy/index.html` (privacy policy, `/privacy`), `styles.css`, `app.js`, and
+  `assets/`. Plain HTML/CSS/JS, no build step.
 - `Dockerfile` + `entrypoint.sh` — package `site/` into a tiny Alpine image that copies the files
   into a shared volume at runtime.
 - `.github/workflows/publish.yml` — build + push `ghcr.io/openkoutsi/openkoutsi-landing-page:latest`.
