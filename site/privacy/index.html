@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy &amp; Data Processing Policy — openkoutsi</title>
+    <meta
+      name="description"
+      content="How the openkoutsi public instance (app.koutsi.dev) collects, processes, stores, and protects your personal and health data under the GDPR."
+    />
+    <link rel="canonical" href="https://koutsi.dev/privacy" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="theme-color" content="#e0592e" />
+    <meta name="robots" content="index, follow" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="openkoutsi" />
+    <meta property="og:title" content="Privacy &amp; Data Processing Policy — openkoutsi" />
+    <meta property="og:url" content="https://koutsi.dev/privacy" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+
+    <style>
+      /* Scoped prose styles for the legal pages (kept out of the shared
+         styles.css since only /privacy uses them). */
+      .legal {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 56px 24px 96px;
+        color: var(--ink-2);
+        font-family: var(--font-inter), system-ui, sans-serif;
+        line-height: 1.72;
+      }
+      .legal h1 {
+        font-family: var(--font-space-grotesk), sans-serif;
+        color: var(--ink);
+        font-size: clamp(1.9rem, 4vw, 2.6rem);
+        line-height: 1.1;
+        margin: 0 0 8px;
+      }
+      .legal h2 {
+        font-family: var(--font-space-grotesk), sans-serif;
+        color: var(--ink);
+        font-size: 1.3rem;
+        margin: 44px 0 10px;
+        padding-top: 16px;
+        border-top: 1px solid var(--line);
+      }
+      .legal h3 {
+        font-family: var(--font-space-grotesk), sans-serif;
+        color: var(--ink);
+        font-size: 1.05rem;
+        margin: 24px 0 6px;
+      }
+      .legal p,
+      .legal li {
+        font-size: 1rem;
+      }
+      .legal ul {
+        padding-left: 1.2em;
+      }
+      .legal li {
+        margin: 6px 0;
+      }
+      .legal a {
+        color: var(--lp-accent);
+        text-decoration: underline;
+        text-underline-offset: 2px;
+      }
+      .legal .doc-meta {
+        font-family: var(--font-jetbrains-mono), monospace;
+        font-size: 0.85rem;
+        color: var(--ink-3);
+        margin: 0 0 32px;
+      }
+      .legal strong {
+        color: var(--ink);
+      }
+      .legal table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 14px 0;
+        font-size: 0.92rem;
+      }
+      .legal th,
+      .legal td {
+        border: 1px solid var(--line);
+        padding: 8px 10px;
+        text-align: left;
+        vertical-align: top;
+      }
+      .legal th {
+        background: var(--bg-2);
+        color: var(--ink);
+        font-family: var(--font-space-grotesk), sans-serif;
+      }
+      .legal .table-wrap {
+        overflow-x: auto;
+      }
+      /* TODO placeholders that MUST be completed before this page goes live. */
+      .legal .todo {
+        background: color-mix(in oklch, var(--lp-accent) 18%, transparent);
+        border-bottom: 1px dashed var(--lp-accent);
+        padding: 0 3px;
+        font-family: var(--font-jetbrains-mono), monospace;
+        font-size: 0.85em;
+      }
+      .legal .back {
+        display: inline-block;
+        margin-bottom: 28px;
+        font-family: var(--font-jetbrains-mono), monospace;
+        font-size: 0.85rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="lp">
+      <nav class="nav">
+        <div class="container nav-inner">
+          <div class="logo">
+            <a href="/" style="display: flex; align-items: center; gap: 10px; color: inherit; text-decoration: none">
+              <img src="/assets/logo.svg" alt="openkoutsi" class="logo-img" />
+              openkoutsi
+            </a>
+          </div>
+          <div class="nav-right">
+            <a href="/#features">Features</a>
+            <a href="/#public">Public instance</a>
+            <a href="/#selfhost">Self-host</a>
+            <a href="https://openkoutsi.github.io/openkoutsi-docs/" target="_blank" rel="noopener noreferrer">Docs</a>
+            <a href="https://github.com/openkoutsi/openkoutsi" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            <div class="locale-switch">
+              <a href="/privacy" class="active locale-link" hreflang="en">EN</a>
+              <a href="/fi/" class="locale-link" hreflang="fi">FI</a>
+            </div>
+            <a href="https://app.koutsi.dev/login" class="btn btn-primary">Sign in →</a>
+          </div>
+        </div>
+      </nav>
+
+      <main class="legal">
+        <a href="/" class="back">← Back to openkoutsi</a>
+
+        <h1>Privacy &amp; Data Processing Policy</h1>
+        <p class="doc-meta">Version 1.0 · Effective 2026-07-14 · Applies to the public instance at app.koutsi.dev</p>
+
+        <p>
+          This policy explains how the <strong>openkoutsi</strong> public instance at
+          <a href="https://app.koutsi.dev" target="_blank" rel="noopener noreferrer">app.koutsi.dev</a>
+          (“the App”, “we”, “us”) collects, processes, stores, and protects your personal data —
+          including biometric health data — in accordance with Regulation (EU) 2016/679 (the “GDPR”).
+          It reflects a core design principle of openkoutsi: your fitness data belongs to you, is
+          accessible only to you, and is never exposed to other users.
+        </p>
+        <p>
+          openkoutsi is open-source software that anyone can self-host. This policy covers only the
+          public instance we operate at app.koutsi.dev. If you use a different instance, the operator
+          of that instance is your data controller and provides their own policy.
+        </p>
+
+        <h2>1. Who we are (Data Controller)</h2>
+        <p>
+          <strong>Data controller:</strong>
+          <span class="todo">[TODO: legal controller name]</span>,
+          <span class="todo">[TODO: address]</span>.
+        </p>
+        <p>
+          <strong>Contact for privacy matters:</strong>
+          <span class="todo">[TODO: privacy contact email]</span>.
+        </p>
+        <p>
+          No Data Protection Officer (DPO) or Article 27 representative has been appointed; neither is
+          required for an instance of this nature and scale. This will be updated here if that changes.
+        </p>
+
+        <h2>2. Our privacy-by-design approach</h2>
+        <p>
+          Each user's data is held in its own <strong>isolated per-user database</strong>. Only two
+          kinds of “actors” ever have access to your data:
+        </p>
+        <ul>
+          <li><strong>You</strong> — the only human who can view your raw data and results.</li>
+          <li>
+            <strong>Automated processing</strong> — algorithms running on our server, and (only if you
+            opt in) an AI model that analyses your data to produce insights.
+          </li>
+        </ul>
+        <p>
+          No other user, and no administrator of the instance, can read your decrypted fitness or
+          biometric data in the ordinary course of operation. openkoutsi ships with
+          <strong>zero telemetry</strong>: no analytics and no third-party tracking SDKs.
+        </p>
+
+        <h2>3. What data we process</h2>
+        <h3>3.1 Data you provide or generate</h3>
+        <ul>
+          <li>
+            <strong>Biometric and health data</strong> — heart rate, weight, heart-rate and power
+            zones, and other fitness metrics you record or connect. This is “special-category data”
+            under Article 9 GDPR and receives heightened protection.
+          </li>
+          <li>
+            <strong>Activity and derived data</strong> — workouts, training-load metrics (CTL/ATL/TSB),
+            trends, goals, and insights calculated from your metrics.
+          </li>
+          <li>
+            <strong>Account and configuration data</strong> — your username, display name, an optional
+            profile picture, and your settings and preferences.
+          </li>
+        </ul>
+        <h3>3.2 Technical data</h3>
+        <ul>
+          <li>
+            <strong>Diagnostic data</strong> — app/server error logs used to keep the service working
+            and secure. We do not run web analytics on you.
+          </li>
+        </ul>
+
+        <h2>4. How your data is processed and stored</h2>
+        <h3>4.1 Storage</h3>
+        <p>
+          Your data is stored on a single <strong>UpCloud</strong> server in
+          <strong>Helsinki, Finland</strong> — an EU-owned provider, on EU soil, under EU and Finnish
+          law, and outside the reach of the US CLOUD Act. Storage is <strong>encrypted at rest</strong>
+          and backed up daily, and each user has a private database that no one else — not even an
+          administrator — can read. Data is transmitted between your device and the server over an
+          encrypted connection (TLS).
+        </p>
+        <h3>4.2 Automated algorithmic processing</h3>
+        <p>
+          Algorithms on the server calculate your metrics, detect trends, and generate insights. This
+          runs automatically and produces results only you can see; it involves no human reviewer.
+        </p>
+        <h3>4.3 Optional AI analysis</h3>
+        <p>
+          <strong>AI analysis is optional and off by default.</strong> If — and only if — you enable it,
+          the relevant metrics for the requested insight are sent to a large language model (“LLM”) to
+          produce a natural-language analysis. The provider and model are shown to you before analysis
+          runs, and you can disable the feature at any time, after which no further data is sent to any
+          provider. When you enable it, the submitted data is processed by the third-party provider
+          under that provider's own terms and privacy policy (including any decisions they make about
+          model training, retention, and processing location).
+        </p>
+
+        <h2>5. Lawful bases for processing</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Processing activity</th><th>Lawful basis (Art. 6)</th><th>Special-category condition (Art. 9)</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Core processing of your fitness/biometric data to provide the App</td><td>Art. 6(1)(b) — performance of a contract with you</td><td>Art. 9(2)(a) — your explicit consent</td></tr>
+              <tr><td>Optional AI/LLM analysis of your data</td><td>Art. 6(1)(a) — consent</td><td>Art. 9(2)(a) — your explicit consent, per feature</td></tr>
+              <tr><td>Security, diagnostics, and stability</td><td>Art. 6(1)(f) — legitimate interests</td><td>N/A (no health data used for this purpose)</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          Because biometric health data is special-category data, we rely on your
+          <strong>explicit consent</strong>, requested clearly and separately when you first sign in.
+          You can <strong>withdraw consent at any time</strong> without affecting processing carried out
+          beforehand. Withdrawing consent to AI analysis stops that feature; withdrawing consent to core
+          processing means the App can no longer function, and you may export or delete your data.
+        </p>
+
+        <h2>6. Who can access your data</h2>
+        <ul>
+          <li><strong>You</strong> — full access to your own data and insights.</li>
+          <li><strong>Automated processing</strong> — algorithms and, if enabled, your chosen LLM.</li>
+          <li><strong>No other users</strong> — the App does not expose your data to any other user.</li>
+          <li><strong>Administrators</strong> — cannot read your decrypted fitness/biometric data; it is per-user and encrypted at rest.</li>
+          <li><strong>Third-party AI providers</strong> — only the provider you select, only when you enable AI analysis, and only for the data sent for that analysis.</li>
+        </ul>
+
+        <h2>7. Automated decision-making</h2>
+        <p>
+          The insights and suggestions the App generates are informational. They do not produce legal or
+          similarly significant effects on you within the meaning of Article 22 GDPR — they are
+          decision-support, not automated decisions about your rights or obligations.
+        </p>
+
+        <h2>8. Third-party services and international transfers</h2>
+        <p>
+          If you connect them, the App exchanges activity data with <strong>Strava</strong> and/or
+          <strong>Wahoo</strong> under their respective terms — these integrations are entirely optional.
+          If you enable AI analysis, your data is sent to the LLM provider you configure. Some providers
+          may process data outside the EU/UK; where that happens, transfers rely on an appropriate
+          safeguard such as the EU Standard Contractual Clauses or an adequacy decision. Because the App
+          shows you the provider before analysis, you can decline if you prefer not to transfer data
+          internationally. Where a third party processes data on our behalf, we put an Article 28 data
+          processing agreement in place; this includes our hosting provider, UpCloud.
+        </p>
+
+        <h2>9. Data retention</h2>
+        <ul>
+          <li>Your fitness and biometric data is kept until you delete it or close your account, after which it is removed from the live system, with backups rotating out on our daily backup cycle.</li>
+          <li>Data sent to an AI provider is retained according to that provider's policy.</li>
+          <li>Diagnostic logs are kept only as long as needed for security and stability.</li>
+        </ul>
+
+        <h2>10. Your rights</h2>
+        <p>Under the GDPR you have the right to access, rectification, erasure, restriction, data portability, objection, and to withdraw consent at any time. You can:</p>
+        <ul>
+          <li><strong>Export</strong> your data (profile and raw activity data) as a downloadable archive from within the App at any time.</li>
+          <li><strong>Delete</strong> your account and all associated data from within the App at any time.</li>
+          <li><strong>Withdraw consent</strong> to health-data processing or AI analysis at any time.</li>
+        </ul>
+        <p>
+          For anything else, contact us at <span class="todo">[TODO: privacy contact email]</span>; we
+          respond within one month as required by Article 12. You also have the right to lodge a
+          complaint with the Finnish supervisory authority, the
+          <a href="https://tietosuoja.fi/en/home" target="_blank" rel="noopener noreferrer">Office of the Data Protection Ombudsman</a>.
+        </p>
+
+        <h2>11. Security</h2>
+        <p>
+          We protect your data with encryption at rest, encryption in transit (TLS), per-user database
+          isolation, data minimisation (only the data needed for a feature is processed or transmitted),
+          and daily backups. If a breach is likely to risk your rights and freedoms, we will notify the
+          supervisory authority within 72 hours (Article 33) and, where the risk is high, inform you
+          without undue delay (Article 34).
+        </p>
+
+        <h2>12. Children</h2>
+        <p>
+          The App is not intended for children under 16, and we do not knowingly process their data
+          without verified parental consent.
+        </p>
+
+        <h2>13. Changes to this policy</h2>
+        <p>
+          We may update this policy from time to time. Material changes — particularly to the data
+          processed, the third parties involved, or the lawful bases — are notified in the App before
+          they take effect and require your renewed consent. The version and date at the top reflect the
+          current text.
+        </p>
+
+        <h2>14. Contact</h2>
+        <p>
+          <strong>Data controller:</strong> <span class="todo">[TODO: legal controller name]</span>,
+          <span class="todo">[TODO: address]</span>.<br />
+          <strong>Privacy contact:</strong> <span class="todo">[TODO: privacy contact email]</span>.<br />
+          <strong>Supervisory authority:</strong>
+          <a href="https://tietosuoja.fi/en/home" target="_blank" rel="noopener noreferrer">Office of the Data Protection Ombudsman</a> (Finland).
+        </p>
+      </main>
+
+      <footer>
+        <div class="container foot-inner">
+          <div>
+            <a href="https://github.com/openkoutsi/openkoutsi" target="_blank" rel="noopener noreferrer"><strong style="color: var(--ink)">openkoutsi</strong></a>
+            · Apache-2.0 · © 2026 contributors
+          </div>
+          <div style="display: flex; gap: 20px">
+            <a href="/privacy">Privacy</a>
+            <a href="https://app.koutsi.dev" target="_blank" rel="noopener noreferrer">Web app ↗</a>
+            <a href="https://openkoutsi.github.io/openkoutsi-docs/" target="_blank" rel="noopener noreferrer">Docs ↗</a>
+            <a href="https://github.com/openkoutsi/openkoutsi" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="/app.js"></script>
+  </body>
+</html>
