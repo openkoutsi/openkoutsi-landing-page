@@ -272,9 +272,9 @@
           <li><strong>You</strong> — full access to your own data and insights.</li>
           <li><strong>Automated processing</strong> — algorithms and, if enabled, your chosen LLM.</li>
           <li><strong>No other users</strong> — the App does not expose your data to any other user.</li>
-          <li><strong>Administrators</strong> — cannot read your decrypted fitness/biometric data; it is per-user and encrypted at rest.</li>
+          <li><strong>Administrators</strong> — cannot read your decrypted fitness/biometric data; it is per-user and encrypted at rest. The one exception is any message <em>you choose to send to the published contact address</em> (see below): like any email you send someone, its contents are readable by the administrators who receive it.</li>
           <li><strong>Third-party AI providers</strong> — only the provider you select, only when you enable AI analysis, and only for the data sent for that analysis.</li>
-          <li><strong>Email provider</strong> — if this instance sends email (sign-up verification, password-reset links), your email address is shared with the configured provider (Lettermint or EuroMail) solely to deliver those messages.</li>
+          <li><strong>Email provider</strong> — if this instance sends email (sign-up verification, password-reset links), your email address is shared with the configured provider (Lettermint or EuroMail) solely to deliver those messages. If this instance also enables <strong>inbound email</strong>, mail you send to its published contact address is received by that same provider and surfaced to the instance's administrators.</li>
         </ul>
 
         <h2>7. Automated decision-making</h2>
@@ -307,6 +307,15 @@
           <a href="https://lettermint.co/privacy-policy" target="_blank" rel="noopener noreferrer">Lettermint</a>
           and
           <a href="https://euromail.dev/" target="_blank" rel="noopener noreferrer">EuroMail</a>.
+        </p>
+        <p>
+          If this instance additionally enables <strong>inbound email</strong>, any message you send to
+          its published contact address (for this instance,
+          <a href="mailto:lassi@koutsi.dev">lassi@koutsi.dev</a>) is received and processed by the same
+          email provider and then surfaced to the instance's administrators so they can respond. Only
+          send information you are comfortable sharing with the operator — this channel is for reaching a
+          person, and is separate from your private, encrypted training data, which administrators still
+          cannot read.
         </p>
 
         <h2>9. Data retention</h2>
