@@ -647,15 +647,14 @@ body {
 /* LOCALE SWITCHER */
 .lp .locale-switch {
   display: flex;
-  gap: 4px;
-  font-size: 12px;
-  font-weight: 500;
+  align-items: center;
+  gap: 8px;
 }
 
 .lp .locale-switch a {
-  padding: 2px 8px;
-  border-radius: 4px;
-  border: 1px solid currentColor;
+  display: flex;
+  padding: 2px;
+  border-radius: 3px;
   opacity: 0.4;
   transition: opacity 0.15s ease;
 }
@@ -666,7 +665,14 @@ body {
 
 .lp .locale-switch a.active {
   opacity: 1;
-  font-weight: 600;
+}
+
+.lp .locale-switch .flag {
+  display: block;
+  height: 14px;
+  width: auto;
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.12);
 }
 
 @media (max-width: 860px) {
